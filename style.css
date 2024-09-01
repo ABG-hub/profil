@@ -1,0 +1,279 @@
+* Resetting margin and padding, and setting font-family */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #e0e0e0;
+    background-color: #1c1c1c;
+}
+h1, h2, h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+
+/* Logo Styling */
+.logo {
+    width: 70px;
+    height: 70px;
+}
+
+/* Header Styles */
+.header, .header-a, .headere, .headerl, .headerel,.headerm,.headerw {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px 80px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    position: relative;
+    z-index: 999; 
+    position:sticky;
+    top:0;
+    left:0;/* Ensures header is above the video */
+}
+
+.header {
+    background: rgb(5, 5, 5);
+    font-family:roboto;
+}
+
+.header-a {
+    background: #FFD700;
+}
+
+.headere {
+    background: rgb(92, 216, 154);
+}
+
+.headerl {
+    background: red;
+}
+
+.headerel {
+    background: rgb(120, 230, 120);
+}
+.headerm{
+    background-color: rgb(199, 168, 168);
+}
+.headerw{
+    background-color: rgb(248, 140, 248);
+    border:5px dotted gold;
+}
+.mobile{
+    display: none;
+    
+}
+.close{
+    display:none;
+}
+
+/* Navigation Bar Styles */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    transition: 0.4s ease;
+    position: relative;
+}
+
+/* Hover effects for specific navigation bars */
+.nav-bar.header .a:hover {
+    color: brown;
+}
+.nav-bar.header .d:hover {
+    color: rgb(128, 125, 125);
+}
+.nav-bar.header .e:hover {
+    color: green;
+}
+.nav-bar.header .l:hover {
+    color: red;
+}
+.nav-bar.header .m:hover {
+    color: purple;
+}
+.nav-bar.header .w:hover {
+    color: yellow;
+}
+
+/* Underline effect for active and hovered navigation links */
+.nav-bar li a.active::after,
+.nav-bar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: rgb(71, 52, 139);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* Hero Sections Styles */
+.hero, .hero2, .hero3, .hero4, .hero5, .hero6, .hero7,.hero8{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 80px;
+    position: relative;
+    z-index: 3; /* Ensures hero content is above the video */
+}
+
+.hero {
+    background-size: cover;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+span{
+    color:red;
+}
+
+.hero2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    background-image: url("./Assets/image2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero3 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red;
+    background-color: rgb(56, 55, 55);
+}
+
+.hero4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(107, 107, 247);
+    background-color: rgb(172, 252, 172);
+}
+.hero5 {
+    font-family: cursive;
+    color: white;
+    background-color: black;
+}
+.hero6{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color:blue;
+    background-color: black;
+}
+.hero7{
+    font-weight: 100;
+    font-family: serif;
+    color:rgb(255, 145, 0);
+    background-color: blueviolet;
+}
+.hero{
+    background-color: red;
+    color:rgb(19, 8, 117);
+}
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.icontainer{
+    display: flex;
+    flex-direction: column;
+    height:auto;
+    width: 450px;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+
+}
+.images{
+    width:400px;
+    height: auto;
+}
+.fa{
+    width:100px;
+    height: auto;
+}
+.contactme{
+    border:10px solid blue;
+    text-align: center;
+}
+.bye{
+    position:absolute;
+    bottom: 2px;
+    right:20px;
+}
+.ras{
+    color:blue;
+}
+@media(max-width:1000px){
+    .nav-bar {
+        display: none;
+   
+    }
+    .nav-bar.app{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top:0;
+        background-color: black;
+        right:0px;
+        width:20%;
+        height:100vh
+
+    }
+    .close{
+        display:initial;
+        border: 25%;
+        background-color: red;
+    }
+    .nav-bar li {
+        list-style: none;
+        padding: 0 20px;
+        position: relative;
+        margin-top:10%;
+    }
+    .mobile{
+        background-color: #FFD700;
+        padding: 5px 6px;
+        border-radius: 25px;
+        color:red;
+        display:flex;
+        position: fixed;
+        right:3%;
+        height: 5%;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .icontainer {
+        width: 200px;
+        height: 200px; 
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .images {
+        width: 200px;
+        max-height: 100%;
+        object-fit: contain; /* Ensures the image fits within the container */
+    }
+    
+  
+}
